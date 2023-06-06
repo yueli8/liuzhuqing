@@ -1,0 +1,7 @@
+Sample	ID	Sex	Smoke	Status	Patient
+p1	GSM72	M	smoker	Paracarcinoma	P1
+p2	GSM73	M	smoker	Paracarcinoma	P2
+p3	GSM74	F	smoker	Paracarcinoma	P3
+t1	GSM75	F	smoker	Tumor	T1
+t2	GSM76	M	smoker	Tumor	T2
+t3	GSM78	M	smoker	Tumor	T3
