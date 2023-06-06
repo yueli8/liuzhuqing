@@ -1,0 +1,4 @@
+Sample	ID	Sex	Smoke	Status	Patient
+t1	GSM75	F	smoker	Tumor	T1
+t2	GSM76	M	smoker	Tumor	T2
+t3	GSM78	M	smoker	Tumor	T3
