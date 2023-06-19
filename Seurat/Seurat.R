@@ -367,7 +367,7 @@ View(T@meta.data)
 
 #T cell annotation,use herong's data.
 setwd("~/liuzhuqing/herong")
-hms_cluster<-readRDS(file="herong_T_cluster_test .rds")
+hms_cluster<-readRDS(file="herong_T_cluster_test.rds")
 DimPlot(hms_cluster, reduction = "umap")
 
 new.cluster.ids <- c("T_helper","CD4_T","Treg","CD8_T","Naive_T","CD8_T","MAIT",
