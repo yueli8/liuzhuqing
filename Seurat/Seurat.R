@@ -239,7 +239,7 @@ View(hms@meta.data)
 
 #我的結果是0-30簇,何蓉的結果是0-32簇,我應該在她的文件上標注.
 setwd("~/liuzhuqing/herong")
-hms_cluster<-readRDS(file="hms_cluster_test.rds")
+hms_cluster<-readRDS(file="herong_hms_cluster_test.rds")
 DimPlot(hms_cluster, reduction = "umap")
 
 new.cluster.ids <- c("Endothelial","Myofibroblast","Inflammatory_Fibroblast","Melanocyte",
