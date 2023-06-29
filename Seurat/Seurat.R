@@ -474,3 +474,20 @@ saveRDS(MAIT, file="MAIT.rds")
 NKT<-subset(T_new, idents=c('NKT'))
 DimPlot(NKT, reduction = "umap")
 saveRDS(NKT, file="NKT.rds")
+
+setwd("~/liuzhuqing/herong")
+hms_cluster<-readRDS(file="t.rds")
+DimPlot(hms_cluster, reduction = "umap")
+
+VlnPlot(hms_cluster, features = c("CD8A", "CD8B","GZMK","CD27","CCR7","IL7R","CD4","FOXP3"))
+VlnPlot(hms_cluster, features = c("CTLA4","TRDC","TGFB1","TRAV1-2","LAG3","PDCD1","TGFBR2",
+                                     "IGHG1","MZB1"))
+
+RidgePlot(hms_cluster, features = c("CD8A", "CD8B","GZMK","CD27","CCR7","IL7R","CD4","FOXP3"))
+RidgePlot(hms_cluster, features = c("CTLA4","TRDC","TGFB1","TRAV1-2","LAG3","PDCD1","TGFBR2",
+                                  "IGHG1","MZB1"))
+
+#feature plot
+FeaturePlot(hms_cluster, features = c("CD8A", "CD8B","GZMK","CD27","CCR7","IL7R","CD4","FOXP3"))
+FeaturePlot(hms_cluster, features = c("CTLA4","TRDC","TGFB1","TRAV1-2","LAG3","PDCD1","TGFBR2",
+                                    "IGHG1","MZB1"))
